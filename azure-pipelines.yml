@@ -19,7 +19,8 @@ steps:
   displayName: 'Run a multi-line script'
 - task: SqlAzureDacpacDeployment@1
   inputs:
-    azureSubscription: 'R&D-In Silico First eScience-01'
+    azureResourceManagerConnection: 'QA (e-Science) Azure Connection'
+    #subscriptionId: '01491751-2545-4f64-afa7-54ffc907183d'
     ServerName: 'bnlwe-es01-d-57280-unilever-sql-01.database.windows.net'
     DatabaseName: 'mskssqldb-sl01'
     SqlUsername: 'mskssqlserveradmin'

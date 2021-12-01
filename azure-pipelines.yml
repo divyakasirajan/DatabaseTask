@@ -18,7 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 - task: SqlAzureDacpacDeployment@1
-  displayName: Execute Azure SQL : DacpacTask
   inputs:
     azureSubscription: 'R&D-In Silico First eScience-01'
     ServerName: 'bnlwe-es01-d-57280-unilever-sql-01.database.windows.net'

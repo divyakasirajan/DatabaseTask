@@ -17,3 +17,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: SqlAzureDacpacDeployment@1
+  displayName: Execute Azure SQL : DacpacTask
+  inputs:
+    azureSubscription: 'R&D-In Silico First eScience-01'
+    ServerName: 'bnlwe-es01-d-57280-unilever-sql-01.database.windows.net'
+    DatabaseName: 'mskssqldb-sl01'
+    SqlUsername: 'mskssqlserveradmin'
+    SqlPassword: 'gA2IT4jL0Y7Xjfsz'
+    DacpacFile: 'C:\Users\dk15\Uniliver\Sales POC\mskssqldb-sl01.dacpac'
